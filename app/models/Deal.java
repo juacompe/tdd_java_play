@@ -11,10 +11,10 @@ import play.db.jpa.Model;
  * @author juacompe
  */
 @Entity
-class Deal extends Model {
+public class Deal extends Model {
 
-    String title;
-    double price;
+    public String title;
+    public double price;
     
     Deal(String title, double price) {
         this.title = title;

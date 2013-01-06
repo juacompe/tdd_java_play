@@ -14,7 +14,8 @@ public class Application extends Controller {
     }
     
     public static void deal_details(Long id) {
-        render();
+        Deal deal = Deal.findById(id);
+        render(deal);
     }
 
 }

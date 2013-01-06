@@ -18,5 +18,6 @@ public class TestGetDealDetails extends FunctionalTest {
         Response response = GET("/deal/1");
         assertIsOk(response);
         assertContentType("text/html", response);
+        assertContentMatch("Korean Tour", response);
     }
 }
