@@ -14,7 +14,7 @@ import play.test.UnitTest;
 public class TestDeal extends UnitTest {
     
     @Test
-    public void createNewDeal() {
+    public void createNewKoreanTourDeal() {
         String title = "Korean tour";
         double price = 80000;
         Deal deal = new Deal(title, price);
@@ -22,6 +22,15 @@ public class TestDeal extends UnitTest {
         assertEquals(price, deal.price, 0);
     }
     
+    @Test
+    public void createNewSpaDeal() {
+        String title = "Aurora Spa";
+        double price = 3000;
+        Deal deal = new Deal(title, price);
+        assertEquals(title, deal.title);
+        assertEquals(price, deal.price, 0);
+    }
+
     @Test 
     public void saveAndRetrieveDeal() {
         String title = "Korean tour";

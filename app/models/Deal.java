@@ -17,8 +17,8 @@ class Deal extends Model {
     double price;
     
     Deal(String title, double price) {
-        this.title = "Korean tour";
-        this.price = 80000;
+        this.title = title;
+        this.price = price;
     }
     
 }
